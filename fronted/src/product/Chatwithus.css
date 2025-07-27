@@ -1,0 +1,119 @@
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.button123 {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.button123:hover {
+  background-color: #45a049;
+}
+
+.diet-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.diet-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.diet-form input, .diet-form select {
+  margin-top: 5px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.diet-plan {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.diet-plan table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.diet-plan table, .diet-plan th, .diet-plan td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.diet-plan th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.diet-plan td {
+  text-align: center;
+}
+
+.close-btn {
+  padding: 10px 20px;
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn:hover {
+  background-color: #FF4500;
+}
+
+.meal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meal-form label {
+  margin: 10px 0;
+}
+
+.meal-form input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.meal-plan {
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}

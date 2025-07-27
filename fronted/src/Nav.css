@@ -1,0 +1,311 @@
+/* .n-container{
+width: 100vw; 
+    max-width: 100%; 
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.navbar-top-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar-top-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-logo h2 {
+  font-size: 24px;
+  color: #4e535f;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search select {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.navbar-search input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.navbar-icons a {
+  color: #4e535f;
+  text-decoration: none;
+  margin-left: 20px;
+  
+}
+
+.navbar-icons a:hover {
+  text-decoration: underline;
+  color: #6c7fd8;
+}
+
+.navbar-menu {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.navbar-menu ul li {
+  display: inline;
+}
+
+.navbar-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.navbar-menu ul li a:hover {
+  color: #6c7fd8;
+  border-bottom: 2px solid #6c7fd8;
+}
+
+ */
+
+ /* Base styles for the navbar */
+.n-container {
+  width: 100vw; 
+  max-width: 100%; 
+  padding: 0;
+  margin: 0;
+}
+
+/* Top navbar styles */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.navbar-top-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar-top-links a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom navbar styles */
+.navbar-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-logo h2 {
+  font-size: 24px;
+  color: #4e535f;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search select {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.navbar-search input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.navbar-icons a {
+  color: #4e535f;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar-icons a:hover {
+  text-decoration: underline;
+  color: #6c7fd8;
+}
+
+.navbar-menu {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.navbar-menu ul li {
+  display: inline;
+}
+
+.navbar-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.navbar-menu ul li a:hover {
+  color: #6c7fd8;
+  border-bottom: 2px solid #6c7fd8;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  /* Stack elements vertically on small screens */
+  .navbar-bottom {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  /* Reduce logo size */
+  .navbar-logo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-logo h2 {
+    font-size: 20px;
+  }
+
+  /* Center the search bar and reduce spacing */
+  .navbar-search {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .navbar-search select,
+  .navbar-search input {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  /* Hide menu and show only on click for smaller screens */
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-menu ul li {
+    margin: 10px 0;
+  }
+
+  /* Add hamburger menu button for mobile view */
+  .navbar-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  /* Adjust padding and font-size for smaller screens */
+  .navbar-icons a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even smaller screens like mobile phones */
+  .navbar-logo h2 {
+    font-size: 18px;
+  }
+
+  .navbar-search select,
+  .navbar-search input {
+    font-size: 10px;
+  }
+
+  .navbar-icons a {
+    font-size: 12px;
+  }
+}
